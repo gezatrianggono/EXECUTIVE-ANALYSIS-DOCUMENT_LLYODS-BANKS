@@ -11,7 +11,7 @@
 ---
 
 ## I. Executive Summary
-In addressing the rising trend of customer churn at SmartBank, the Data Science team has consolidated over 6,800 historical interaction data points into a unified, single-view profile per customer. This first-phase analysis concludes that churn at SmartBank is not driven by a single linear factor (such as age or income alone), but rather by a complex combination of financial and digital behaviors. Consequently, the data architecture has been fully standardized and is 100% ready for execution using non-linear Machine Learning models (e.g., Random Forest) in Phase 2 to generate high-accuracy retention predictions.
+In addressing the rising trend of customer churn at Lloyds Banks, the Data Science team has consolidated over 6,800 historical interaction data points into a unified, single-view profile per customer. This first-phase analysis concludes that churn at Lloyds Banks is not driven by a single linear factor (such as age or income alone), but rather by a complex combination of financial and digital behaviors. Consequently, the data architecture has been fully standardized and is 100% ready for execution using non-linear Machine Learning models (e.g., Random Forest) in Phase 2 to generate high-accuracy retention predictions.
 
 ## II. Data Landscape & Architecture
 The primary approach was to build a 360-degree customer view. Five distinct datasets were integrated using a relational merge (Left Join) based on CustomerID:
@@ -26,7 +26,7 @@ The primary approach was to build a 360-degree customer view. Five distinct data
 <!-- Contoh pemanggilan gambar dari folder assets -->
 ![Histogram: Distribusi Umur Nasabah (Bertahan vs Churn)](assets/CHART_1.png)
 
-* **Analysis:** The distribution chart indicates that SmartBank's customer base spans widely from 18 to nearly 70 years old.
+* **Analysis:** The distribution chart indicates that Lloyds Banks customer base spans widely from 18 to nearly 70 years old.
 * **Business Insight:** The initial hypothesis stating that churn is exclusively dominated by "Young Professionals" is not entirely accurate. Customer attrition occurs evenly across various age brackets. This indicates that future retention campaigns should not solely target specific age groups, but must rather be triggered by their transactional behaviors.
 
 ### 2. Monthly Spending Profile and Customer Lifetime Value (CLV) Risk
@@ -34,13 +34,13 @@ The primary approach was to build a 360-degree customer view. Five distinct data
 ![Box Plot: Rata-rata Pengeluaran per Bulan berdasar Status Churn](assets/CHART_2.png)
 
 * **Analysis:** The box plot demonstrates that the median spending of both retained and churned customers sits at an equivalent level (approximately $250). However, the wide data dispersion and the presence of outliers within the churned group highlight a critical dynamic.
-* **Business Insight:** SmartBank is not only losing customers with small transaction volumes but also High Net Worth Individuals (HNWIs) and SME business owners, represented by the outliers above the upper whisker. Losing a single customer in this outlier demographic carries a significantly heavier financial impact than losing dozens of average retail customers.
+* **Business Insight:** Lloyds Banks is not only losing customers with small transaction volumes but also High Net Worth Individuals (HNWIs) and SME business owners, represented by the outliers above the upper whisker. Losing a single customer in this outlier demographic carries a significantly heavier financial impact than losing dozens of average retail customers.
 
 ### 3. Mapping Customer Economic Scale
 <!-- Ganti nama file di bawah ini sesuai dengan nama gambar bar chart yang kamu upload di folder assets -->
 ![Bar Chart: Tingkat Churn Berdasarkan Level Pendapatan](assets/CHART_3.png)
 
-* **Analysis:** "Low Income" customers constitute the largest portion of SmartBank's market share. The churn ratio remains relatively proportional to the population size across all income tiers.
+* **Analysis:** "Low Income" customers constitute the largest portion of Lloyds Banks market share. The churn ratio remains relatively proportional to the population size across all income tiers.
 * **Business Insight:** Product substitution strategies must be tailored accordingly. Mass-market loyalty programs are suitable for the Low-Income segment, whereas the High-Income segment requires hyper-personalized intervention to prevent attrition.
 
 ### 4. Causality Correlation Matrix (Heatmap)
