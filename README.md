@@ -4,7 +4,7 @@
 ## Data Integration, Exploratory Data Analysis (EDA), & Feature Engineering (Data Preprocessing)
 
 * **Initiative Name:** Customer Retention Enhancement through Predictive Analytics
-* **Client Entity:** SmartBank (Lloyds Banking Group Subsidiary)
+* **Client Entity:** Lloyds Banking Group Subsidiary
 * **Prepared By:** Geza Tri Anggono – Data Science & Analytics Team
 * **Date:** Mei 11, 2026
 
