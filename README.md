@@ -24,7 +24,7 @@ The primary approach was to build a 360-degree customer view. Five distinct data
 
 ### 1. Demographic Distribution and Age Hypothesis Validation
 <!-- Contoh pemanggilan gambar dari folder assets -->
-![Histogram: Distribusi Umur Nasabah (Bertahan vs Churn)](assets/CHART 1.png)
+![Histogram: Distribusi Umur Nasabah (Bertahan vs Churn)](./assets/CHART 1.png)
 
 * **Analysis:** The distribution chart indicates that SmartBank's customer base spans widely from 18 to nearly 70 years old.
 * **Business Insight:** The initial hypothesis stating that churn is exclusively dominated by "Young Professionals" is not entirely accurate. Customer attrition occurs evenly across various age brackets. This indicates that future retention campaigns should not solely target specific age groups, but must rather be triggered by their transactional behaviors.
