@@ -59,7 +59,7 @@ To prevent data leakage and ensure the model learns from valid information, the 
 * **Outlier Retention:** Extreme transaction data was deliberately retained (not capped or removed). In the banking industry, these outliers represent lucrative SME/HNWI clients, who are the primary targets of this retention analysis.
 
 ## V. Deliverables & Next Steps
-The primary operational dataset (`cleaned_customer_churn_data.csv`) has been exported and its integrity validated. Based on the Phase 1 findings, the strategic next steps for Phase 2 are:
+The primary operational dataset (`Customer_Churn_Data_Large.csv`) has been exported and its integrity validated. Based on the Phase 1 findings, the strategic next steps for Phase 2 are:
 
 * **Machine Learning Initiation:** Train a Random Forest Classifier model using the sanitized dataset.
 * **Critical Evaluation Metrics:** Given that the churn data is slightly imbalanced (approx. 80% Retained vs. 20% Churned), overall accuracy will not be the primary metric. Model evaluation will heavily index on **Recall** (the ability to detect as many at-risk customers as possible) and **Precision** (preventing misdirected retention promotions).
