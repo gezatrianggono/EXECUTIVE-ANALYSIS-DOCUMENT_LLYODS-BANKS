@@ -24,28 +24,28 @@ The primary approach was to build a 360-degree customer view. Five distinct data
 
 ### 1. Demographic Distribution and Age Hypothesis Validation
 <!-- Contoh pemanggilan gambar dari folder assets -->
-![Histogram: Distribusi Umur Nasabah (Bertahan vs Churn)](./assets/CHART 1.png)
+![Histogram: Distribusi Umur Nasabah (Bertahan vs Churn)](assets/CHART_1.png)
 
 * **Analysis:** The distribution chart indicates that SmartBank's customer base spans widely from 18 to nearly 70 years old.
 * **Business Insight:** The initial hypothesis stating that churn is exclusively dominated by "Young Professionals" is not entirely accurate. Customer attrition occurs evenly across various age brackets. This indicates that future retention campaigns should not solely target specific age groups, but must rather be triggered by their transactional behaviors.
 
 ### 2. Monthly Spending Profile and Customer Lifetime Value (CLV) Risk
 <!-- Ganti nama file di bawah ini sesuai dengan nama gambar box plot yang kamu upload di folder assets -->
-![Box Plot: Rata-rata Pengeluaran per Bulan berdasar Status Churn](assets/CHART 2.png)
+![Box Plot: Rata-rata Pengeluaran per Bulan berdasar Status Churn](assets/CHART_2.png)
 
 * **Analysis:** The box plot demonstrates that the median spending of both retained and churned customers sits at an equivalent level (approximately $250). However, the wide data dispersion and the presence of outliers within the churned group highlight a critical dynamic.
 * **Business Insight:** SmartBank is not only losing customers with small transaction volumes but also High Net Worth Individuals (HNWIs) and SME business owners, represented by the outliers above the upper whisker. Losing a single customer in this outlier demographic carries a significantly heavier financial impact than losing dozens of average retail customers.
 
 ### 3. Mapping Customer Economic Scale
 <!-- Ganti nama file di bawah ini sesuai dengan nama gambar bar chart yang kamu upload di folder assets -->
-![Bar Chart: Tingkat Churn Berdasarkan Level Pendapatan](assets/CHART 3.png)
+![Bar Chart: Tingkat Churn Berdasarkan Level Pendapatan](assets/CHART_3.png)
 
 * **Analysis:** "Low Income" customers constitute the largest portion of SmartBank's market share. The churn ratio remains relatively proportional to the population size across all income tiers.
 * **Business Insight:** Product substitution strategies must be tailored accordingly. Mass-market loyalty programs are suitable for the Low-Income segment, whereas the High-Income segment requires hyper-personalized intervention to prevent attrition.
 
 ### 4. Causality Correlation Matrix (Heatmap)
 <!-- Ganti nama file di bawah ini sesuai dengan nama gambar heatmap yang kamu upload di folder assets -->
-![Heatmap: Korelasi Antar Faktor Perilaku Nasabah](assets/CHART 4.png)
+![Heatmap: Korelasi Antar Faktor Perilaku Nasabah](assets/CHART_4.png)
 
 * **Analysis & Algorithm Justification:** The correlation matrix reveals exceptionally weak linear correlation values (ranging from -0.02 to +0.05) against the ChurnStatus target.
 * **Business Insight:** This is the most crucial analytical finding. The weak linear correlation mathematically proves that the reasons behind customer attrition are multi-dimensional and overlapping. Traditional statistical models (like simple linear regression) will inherently fail to predict this pattern. Therefore, it is imperative to utilize Tree-based algorithmic models (such as Random Forest) in Phase 2 to uncover these hidden, non-linear patterns.
